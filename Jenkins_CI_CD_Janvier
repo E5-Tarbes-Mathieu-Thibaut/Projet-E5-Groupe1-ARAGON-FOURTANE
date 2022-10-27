@@ -30,8 +30,8 @@ pipeline {
             steps {
                 script {
                     def ajd = "${params.DATE}"
-                    def joursmax = 31
-                    def jour_nbr = $joursmax - $ajd
+                    def Integer joursmax = 31
+                    def Integer jour_nbr = $joursmax - $ajd
                     def tache = "${params.USER_STORY}"
                     def valide ="${params.TERMINE}"
 
