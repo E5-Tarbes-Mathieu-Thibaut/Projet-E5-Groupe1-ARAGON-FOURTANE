@@ -4,7 +4,7 @@ pipeline {
         string(name: 'PRENOM', description: 'Entrer votre prenom')
         string(name: 'NOM', description: 'Entrer votre nom')
         password(name: 'PW', description: 'Entrer votre mot de passe ')
-        choice(name: 'DATE', choices: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'], description: "Entrer la date d'aujourd'hui")
+        choice(name: 'DATE', choices: [1, 2, 3, 4, 5, 6, 7, 8, '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'], description: "Entrer la date d'aujourd'hui")
         choice(name: 'USER_STORY', choices : ['Ecrire le resume de sa journee', 'Listez 5 Faits a propos de Moi.'], description: 'Choisir la tache du mois:')
         booleanParam(name: 'TERMINE', description: 'Avez-vous termine la tache ?')
     }
