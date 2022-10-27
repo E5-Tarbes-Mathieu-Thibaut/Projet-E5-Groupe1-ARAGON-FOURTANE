@@ -46,7 +46,7 @@ pipeline {
                         }
 
                         else {
-                            echo "Il est le $ajd Janvier."
+                            echo "Il est le $ajd Fevrier."
                             echo "Il reste $jour_nbr jours pour finaliser votre objectif"
                             echo "Just DO IT !!!"
                         }
