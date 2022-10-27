@@ -31,7 +31,7 @@ pipeline {
                 script {
                     def ajd = "${params.DATE}"
                     
-                    def x = valueOf(ajd)
+                    def x = parseInt(ajd)
                 
                     Integer jour_nbr = 31 - x
                     def tache = "${params.USER_STORY}"
