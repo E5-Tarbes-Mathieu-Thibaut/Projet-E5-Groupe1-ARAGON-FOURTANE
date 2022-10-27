@@ -31,7 +31,7 @@ pipeline {
                     def tache = "${params.USER_STORY}"
                     def valide ="${params.TERMINE}"
 
-                    if (valide = true){
+                    if (valide == true){
                         echo "Félicitation vous etes le meilleur !!!"
                     }
                     else {
