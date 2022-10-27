@@ -33,8 +33,9 @@ pipeline {
 
                     def tache = "${params.USER_STORY}"
                     def valide ="${params.TERMINE}"
-
-                    def jour_nbr = 31 - Integer.parseInt(params.DATE)
+                    
+                    int ajd1 = "$ajd" as Integer
+                    def jour_nbr = 31 - ajd1
 
                     if (valide == "true"){
                         echo "Felicitations vous etes le meilleur !!!"
