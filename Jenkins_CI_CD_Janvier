@@ -30,7 +30,10 @@ pipeline {
             steps {
                 script {
                     def ajd = "${params.DATE}"
-                    def jour_nbr = "31 - $ajd"
+                    
+                    def x = valueOf(ajd)
+                
+                    Integer jour_nbr = 31 - x
                     def tache = "${params.USER_STORY}"
                     def valide ="${params.TERMINE}"
 
