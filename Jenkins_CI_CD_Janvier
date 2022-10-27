@@ -39,7 +39,7 @@ pipeline {
                     }
                     else {
 
-                        if (int parseInt($ajd) > 15) {
+                        if (parseInt($ajd) > 15) {
                             echo "Attention, il est le $ajd Janvier, il ne reste plus que $jour_nbr Jours pour realiser la tache : $tache ."
                             echo "Courage vous pouvez y arriver !!!"
                         }
