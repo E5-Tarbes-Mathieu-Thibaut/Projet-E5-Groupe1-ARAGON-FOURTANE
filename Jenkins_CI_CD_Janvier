@@ -30,12 +30,11 @@ pipeline {
             steps {
                 script {
                     def ajd = "${params.DATE}"
-                    
-                    def x = parseInt(ajd)
-                
-                    Integer jour_nbr = 31 - x
+
                     def tache = "${params.USER_STORY}"
                     def valide ="${params.TERMINE}"
+
+                    def jour_nbr = 31 - Integer.parseInt(params.DATE)
 
                     if (valide == "true"){
                         echo "Felicitations vous etes le meilleur !!!"
